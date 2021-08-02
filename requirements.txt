@@ -1,7 +1,6 @@
 streamlit
 numpy
 pandas
-tensorflow
 tensorflow_hub
 Flask
 gunicorn

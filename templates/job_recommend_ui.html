@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width initial-scale=1.0">
+        <meta name="description" content="Some Recommendation">
+        <link rel="stylesheet" href="../static/css_styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;500&display=swap">
+        <title>Recommendation Engine</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm bg-info">
+            <h3 class="txt text-white mx-auto"><strong>Recommendation</strong></h3>
+        </nav>
+
+        <form action="{{url_for('recommend_jobs')}}" method="post">
+            <div class="input-group">
+                <input type="text" class="form-control" name="user-query" placeholder="Search by Skills, Job Title/Description">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-outline-primary">Search</button>
+                </span>
+            </div>
+        </form>
+        
+        <div class='container'>
+            {% for jobs in jobs_data_list %}
+            <div class="card", id="display-card">
+                <div class="job-title">
+                    <strong>Job Title:</strong> {{ jobs.title }}
+                </div>
+                <hr>
+                <div class="job-domain">
+                    <strong>Job Domain:</strong> {{ jobs.domain }}
+                </div>
+                <hr>
+                <div class="job-description">
+                    <strong>Job Description:</strong>
+                 <p> {{ jobs.description }} </p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </body>
+</html>

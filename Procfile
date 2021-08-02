@@ -1,0 +1,1 @@
+web: gunicorn app:job_recommend_api

@@ -1,12 +1,3 @@
-streamlit
-numpy
-pandas
-tensorflow
-Flask
-gunicorn
-itsdangerous
-Jinja2
-MarkupSafe
-Werkzeug
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:831c426d18889b2db966aa54b791aefe1fe407a7633179abe9340a429e337714
+size 119

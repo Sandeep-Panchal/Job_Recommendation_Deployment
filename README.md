@@ -17,9 +17,7 @@
  - **API Creation:**
     - Flask Framework
 
-<br>
 <hr>
-<br>
 
 ## Repository Folders/Files:
  - **data:**
@@ -35,9 +33,7 @@
  - **Procfile:** Contains one line command to instruct which file to run.
  - **requirements.txt:** Contains the required libraries to be installed while deploying.
 
-<br>
 <hr>
-<br>
 
 ## Steps to Run in Local System:
  - **Clone the repository** by following the steps mentioned here: https://github.com/Sandeep-Panchal/Job_Recommendation_Deployment/issues/1#issuecomment-893166854
@@ -49,9 +45,7 @@
 
  - **Note:** It should be noted that, when deployed in localhost, when entered a query first time, it takes around 1 minute to output. In the first run, it takes 1 minute to load the modules and files. After first run, if you enter queries any number of times, it displays the result within a second. This is because, in the first run, after loading the modules and files, it gets stored in the cache. From the second run, instead of freshly loading everything, it will fetch the loaded data from the cache.**
 
-<br>
 <hr>
-<br>
 
 ## Future Work:
  - I tried deploying the job recommendation in **heroku** and **AWS EC2 Instance**. As tensorflow installation size is large and due to size limit in  **heroku** and **AWS EC2 Instance** platform, it is failing to deploy.

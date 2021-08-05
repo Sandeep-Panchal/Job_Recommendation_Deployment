@@ -1,14 +1,9 @@
 # Job Recommendation
-<br>
-<hr>
-<br>
 
 ### Objective:
  - Given the skills, job description, job title or any job related keyword, it should be able to recommend the more relevant jobs
 
-<br>
 <hr>
-<br>
 
 ## Approach:
  - **Text Data Embedding:**
